@@ -8,21 +8,18 @@ namespace Skole_Administrasjon
 {
     internal class Skole
     {
-        private string skoleNavn;
-        private string city;
-        private string country;
-        private int byggeÅr;
+        public string SkoleNavn { get; set; }
+        public int SkoleOppstart { get; set; }
 
-        private string navn;
-        private string alder;
-        private int startÅr;
-
-        public Skole(string skoleNavn, string city, string country, int byggeår)
+        public Skole(String SkoleNavn, int skoleOppstart)
         {
-            this.skoleNavn = skoleNavn;
-            this.city = city;
-            this.country = country;
-            this.byggeÅr = byggeår;
+            this.SkoleNavn  = SkoleNavn;
+            this.SkoleOppstart = skoleOppstart;
+        }
+
+        public void Info()
+        {
+            Console.WriteLine($"Skole: {SkoleNavn}\nSkole grunnlagt: {SkoleOppstart}");
         }
     }
 }
