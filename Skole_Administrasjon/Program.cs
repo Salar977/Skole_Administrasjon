@@ -6,6 +6,10 @@
         {
             Student student1 = new Student("Idris", 28);
             student1.Info();
+
+            Skole skole1 = new Skole("Gokstad Akademi", 2020);
+
+            skole1.Info();
         }
     }
 }
