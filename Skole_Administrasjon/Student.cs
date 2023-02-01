@@ -7,14 +7,17 @@ using System.Threading.Tasks;
 namespace Skole_Administrasjon
 {
     public class Student
-    { 
+    {
         public string Name { get; set; }
         public int Age { get; set; }
         public Student(string name, int age)
         {
-            Name = name; 
+            Name = name;
             Age = age;
         }
+        public void Info()
+        {
+            Console.WriteLine($"Navn: {Name}\nAge: {Age}");
+        }
     }
-
-}
+}   

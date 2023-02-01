@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Student student1 = new Student("Idris", 28);
+            student1.Info();
         }
     }
 }
