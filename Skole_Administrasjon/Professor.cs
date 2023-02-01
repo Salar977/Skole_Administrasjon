@@ -8,15 +8,16 @@ namespace Skole_Administrasjon
 {
     internal class Professor
     {
-        private int alder;
-        private string navn;
-        private string undervisningsFag;
+        
+        public int Alder { get; set; }
+        public string Navn { get; set; }
+        public string UndervisningsFag { get; set; }
 
         public Professor(int alder, string navn, string undervisningsFag )
         {
-            this.alder = alder;
-            this.navn = navn;
-            this.undervisningsFag = undervisningsFag;
+            this.Alder = alder;
+            this.Navn = navn;
+            this.UndervisningsFag = undervisningsFag;
         }
     }
 }
